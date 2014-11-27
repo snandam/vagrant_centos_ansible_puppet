@@ -4,8 +4,12 @@
 
 ##### Vagrant centos box
 
-- For Dev - Fire up this box, use ansible or puppet to install necessary software, push the binary of the application that you are working on. Yay! you have a webserver to test your code.
-- For Ops - Shall bring up this vagrant boxe to test ansible playbooks and puppet modules before putting them in production
+- For Dev
+	+ Fire up the box, use ansible or puppet scripts use for dev or prod to install necessary software, push the binary of the application that you are working on. Yay! you have a webserver to test your code.
+	+ Fire up the box, install necessary software you need, create a new vagrant image and use that as base image for everyone to use
+- For Ops 
+	+ Shall bring up this vagrant boxe to test ansible playbooks and puppet modules before putting them in production
+	+ Create a vagrant image with pre-installed softwares to quickly spin up boxes as needed
 
 ```sh
 	# To bring the vagrant box up
