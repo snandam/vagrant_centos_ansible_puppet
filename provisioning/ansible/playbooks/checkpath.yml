@@ -1,0 +1,19 @@
+--- 
+- 
+  hosts: all
+  gather_facts: yes
+  vars:
+    path_to_verify: /vagrant
+  tasks: 
+    - 
+      name: "Check if path exists for {{ path_to_verify }}"
+      register: check_path
+      stat: path={{ path_to_verify }}
+    - 
+      debug: "msg='Valid path found on {{ ansible_fqdn }}!'"
+      name: "It exists"
+      when: check_path.stat.exists
+    - 
+      debug: "msg=\"Please verify if {{ path_to_verify }} exists on {{ ansible_fqdn }}...\""
+      name: "It doesn't exist"
+      when: "check_path.stat.exists == false"

@@ -1,0 +1,8 @@
+---
+- hosts: all
+  gather_facts: no
+  tasks:
+    - name: starting a webserver
+      command: sudo python -m SimpleHTTPServer 80
+      args:
+        chdir: /vagrant/provisioning
