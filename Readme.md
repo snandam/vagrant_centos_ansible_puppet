@@ -2,8 +2,6 @@
 - Install [Vagrant](https://www.vagrantup.com/)
 - Install [Virutalbox](https://www.virtualbox.org/)
 
-##### Fairly familiar with ansible and puppet
-
 ##### Vagrant centos box
 
 - For Dev - Fire up this box, use ansible or puppet to install necessary software, push the binary of the application that you are working on. Yay! you have a webserver to test your code.
