@@ -1,5 +1,6 @@
 ##### Download and install necessary softwares
 - Install [Vagrant](https://www.vagrantup.com/)
+- Install [Virutalbox](https://www.virtualbox.org/)
 
 ##### Fairly familiar with ansible and puppet
 
